@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Advance Pro HTML Editor</title>
+    <link rel="icon" href="/images (4) (1).png" />
+
+    <!-- CodeMirror CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/material-darker.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Pro HTML Editor</h2>
+
+    <textarea id="editor">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background:black; color:white; }
+</style>
+</head>
+<body>
+<h1>Hello Ferdous 🚀</h1>
+</body>
+</html>
+</textarea
+    >
+
+    <div class="buttons">
+      <button onclick="runCode()">▶ Run</button>
+      <button onclick="saveCode()">💾 Save</button>
+      <button onclick="loadCode()">📂 Load</button>
+      <button onclick="downloadFile()">⬇ Download</button>
+      <button onclick="toggleTheme()">🌙 Dark/Light</button>
+    </div>
+
+    <iframe id="preview"></iframe>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
